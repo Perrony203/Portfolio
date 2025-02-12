@@ -1,0 +1,91 @@
+body{
+    font-family: "Raleway", serif;     
+}
+
+hr {    
+    border-color: #DCDCDD;
+}
+
+.dark_mode{
+    background-color: #252422;    
+    color: #DCDCDD;   
+}
+
+.bright_mode{
+    background-color: #DCDCDD;   
+    color: #252422;    
+}
+
+.dark_field{
+    background-color: #252422;    
+    color: #DCDCDD;   
+}
+
+.bright_field{
+    background-color: #DCDCDD;   
+    color: #252422;    
+}
+
+header, nav, section, footer{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#button_mode{
+    background-color: #DCDCDD;
+}
+
+.subtitles{
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-top: 150px;
+    font-weight:600;    
+}
+
+.bar_dark{
+    background-color: #333533;
+}
+
+.bar_bright{
+    background-color: #C5C3C6;
+}
+
+.bar_change_dark{
+    background-color: #DCDCDD;
+}
+
+.bar_change_bright{
+    background-color: #252422;
+}
+
+.card_dark{
+    background-color: #333533;
+}
+
+.card_bright{
+    background-color: #C5C3C6;
+}
+
+.border_dark{
+    border-color: #DCDCDD;
+}
+
+.border_bright{
+    border-color: #252422
+}
+
+.bar_send_dark{
+    background-color: #252422;
+}
+
+.bar_change_send_dark{
+    background-color: #DCDCDD;
+}
+
+.bar_send_bright{
+    background-color: #DCDCDD;    
+}
+
+.bar_change_send_bright{
+    background-color: #252422;
+}

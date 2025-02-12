@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src = "https://cdn.tailwindcss.com"></script>
+</head>
+<body class = "dark_mode transition duration-700 ease-in">
+    <nav>
+        <div class = "container ml-auto flex items-center justify-between py-3">
+            <p class = "font-semibold">
+                Based on
+                <br>
+                Rionegro, Colombia
+            </p> 
+            <div class ="grid justify-items-center">
+                <p class ="font-light">Switch to</p>
+                <p id = "mode_text" class ="font-medium">light mode</p>
+                <button onclick ="changeMode()" id ="button_mode" class ="grid justify-items-start rounded-full w-full py-1 pl-2 mt-1 hover:animate-pulse transition duration-[1500ms]"><i class="fa-solid fa-moon" style="color: #000000;"></i></button>
+                <!-- <i class="fa-solid fa-sun"></i> -->
+            </div>
+            <div id="navbarNav" class = "w-full md:w-auto">
+                <ul class="flex justify-between">
+                    <li class ="grid justify-items-center">
+                        <a class = "md:px-8 md:py-2 group relative w-max flex flex-col items-center" href="landing.html">
+                            <span>Home</span>
+                            <div class="relative w-full">
+                                <span  class="absolute -bottom-1 left-0 transition-all duration-300 w-full h-0.5 bar_dark"></span>
+                                <span  class="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bar_change_dark group-hover:w-full"></span>
+                            </div>
+                        </a>                        
+                    </li>                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md card_dark transition duration-100 rounded-[30px] px-[50px] mt-[50px]">            
+            <h2 class="-mt-8 mb-4 text-4xl tracking-tight font-bold text-center">Contact me</h2>
+            <p class="mb-8 lg:mb-16 font-light text-center sm:text-xl">Send me and Email and for we to get in touch as soon as possible.</p>
+            <div class = "grid grid-flow-col grid-rows-4 gap-6">
+                <form action="#" class="space-y-5 -my-9 row-span-4">
+                    <div>
+                        <label for="email" class="block mb-2 text-base font-semibold">Your email</label>
+                        <input type="email" id="email" class="block p-3 w-full text-sm rounded-lg border border_dark shadow-sm focus:ring-primary-500 focus:border-primary-500 dark_field transition duration-700" placeholder="name@flowbite.com" required>
+                    </div>
+                    <div>
+                        <label for="subject" class="block mb-2 text-base font-semibold">Your name</label>
+                        <input type="text" id="subject" class="block p-3 w-full text-sm rounded-lg border border_dark shadow-sm focus:ring-primary-500 focus:border-primary-500 dark_field transition duration-700" placeholder="Let me know how I can help you" required>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="message" class="block mb-2 text-base font-semibold">Your message</label>
+                        <textarea id="message" rows="6" class="block p-2.5 w-full text-sm rounded-lg shadow-sm border border_dark focus:ring-primary-500 focus:border-primary-500 dark_field transition duration-700" placeholder="Leave a comment..."></textarea>
+                    </div>                    
+                </form>
+                <div class = "row-span-3">
+                    <p class = "font-bold text-center">What do you need me for?</p>
+                    <div class="mt-8">                        
+                        <div class = "place-self-center mb-8">                         
+                          <input type="radio" id="btn1" name="toggle" class="hidden peer" checked>                          
+                          <label for="btn1" class="cursor-pointer px-4 py-2 border border_dark rounded-[10px] peer-checked:shadow-lg peer-checked:shadow-[#4C5C68] transition duration-300">Robotic automatization</label>
+                        </div>                        
+                        <div class = "place-self-center mb-8">
+                          <input type="radio" id="btn2" name="toggle" class="hidden peer">
+                          <label for="btn2" class="cursor-pointer px-4 py-2 border border_dark rounded-[10px] peer-checked:shadow-lg peer-checked:shadow-[#4C5C68] transition duration-300">web dev</label>
+                        </div>
+                        <div class = "place-self-center mb-8">
+                            <input type="radio" id="btn3" name="toggle" class="hidden peer">
+                            <label for="btn3" class="cursor-pointer px-4 py-2 border border_dark rounded-[10px] peer-checked:shadow-lg peer-checked:shadow-[#4C5C68] transition duration-300">Other</label>
+                          </div>
+                    </div>
+                </div>
+                <div class ="grid justify-items-center">
+                    <a class = "md:px-8 md:py-2 group relative w-max flex flex-col items-center" href="">
+                        <span class = "flex flex-row items-center animate-pulse">
+                            <p class = "mr-1 font-semibold">Send Email</p>
+                            <i class="fa-solid fa-share"></i>
+                        </span>
+                        <div class="relative w-full">
+                            <span  class="absolute -bottom-1 left-0 transition-all duration-300 w-full h-0.5 bar_send_dark"></span>
+                            <span  class="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bar_change_send_dark group-hover:w-full"></span>
+                        </div>
+                    </a>                        
+                </div>
+            </div>            
+        </div>
+      </section>
+    
+    <script src = "../script/script.js"></script>
+    
+</body>
+</html>
