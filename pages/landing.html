@@ -42,7 +42,7 @@
           <!-- <i class="fa-solid fa-sun"></i> -->
         </div>
         <div id="navbarNav" class="w-full md:w-auto">
-          <ul class="flex flex-col md:flex-row justify-between">
+          <ul class="flex flex-row justify-between">
             <li class="grid justify-items-center my-3 md:my-0">
               <a
                 class="md:px-8 md:py-2 group relative w-max flex flex-col items-center"
@@ -130,8 +130,7 @@
           environments
         </p>
       </div>
-    </header>
-    
+    </header>    
 
     <section class="w-full" id="about">
       <div>
@@ -194,22 +193,22 @@
         <h1 class="subtitles text-[40px] md:text-[50px] lg:text-[60px]">Experience</h1>
         <hr />
       </div>
-      <div class="grid grid-cols-3 gap-6 mt-[30px]">
-        <div class="relative group">
+      <div class="grid grid-cols-1 xl:grid-cols-3 gap-6 mt-[30px]">
+        <div class="relative group grid grid-rows-6 gap-6 auto-rows-min">
           <p
-            class="text-center px-4 opacity-0 group-hover:opacity-100 transition duration-[700ms] text-2xl font-medium card_dark rounded-[15px]"
+            class="text-center px-4 opacity-0 group-hover:opacity-100 transition duration-[700ms] text-4xl xl:text-2xl font-semibold xl:font-medium card_dark rounded-[15px] place-self-center"
           >
             Automatic baby socks packing machine for Crystal SAS
           </p>
-          <div class="card_dark rounded-[15px] relative group mt-[10px]">
+          <div class="row-span-5 card_dark rounded-[15px] relative group">
             <div
-              class="absolute inset-0 w-full cursor-default card_dark h-full rounded-[15px] px-4 py-9 opacity-100 group-hover:h-1/6 group-hover:translate-y-[400px] group-hover:py-6 transition-translate duration-500"
+              class="absolute inset-0 w-full cursor-default card_dark h-full rounded-[15px] px-4 py-9 opacity-100 group-hover:h-1/6 group-hover:translate-y-0 group-hover:py-6 transition-translate duration-500"
             >
-              <p class="text-start font-semibold text-3xl">
+              <p class="text-start font-bold xl:font-semibold text-5xl xl:text-3xl">
                 Industrial automatization
               </p>
               <p
-                class="text-start font-light text-lg group-hover:opacity-0 group-hover:delay-0 delay-[300ms] transition-all duration-900 mt-6"
+                class="text-start font-medium xl:font-light text-3xl xl:text-lg group-hover:opacity-0 group-hover:delay-0 delay-[300ms] transition-all duration-900 mt-6"
               >
                 I develop and integrate industrial automation solutions that
                 combines software and hardware, I design smart manufacturing
@@ -220,7 +219,7 @@
               </p>
               <br />
               <p
-                class="text-start font-light text-lg group-hover:opacity-0 group-hover:delay-0 delay-[300ms] transition-all duration-900"
+                class="text-start font-medium xl:font-light text-3xl xl:text-lg group-hover:opacity-0 group-hover:delay-0 delay-[300ms] transition-all duration-900"
               >
                 I work with PLCs in Ladder, configuring sensor networks, and
                 integrating robotics with real-time data analytics, using
@@ -234,21 +233,21 @@
             />
           </div>
         </div>
-        <div class="relative group">
+        <div class="relative group grid grid-rows-6 gap-6">
           <p
-            class="text-center px-4 opacity-0 group-hover:opacity-100 transition duration-[700ms] text-2xl font-medium card_dark rounded-[15px] h-fit"
+            class="text-center px-4 opacity-0 group-hover:opacity-100 transition duration-[700ms] text-4xl xl:text-2xl font-semibold xl:font-medium card_dark rounded-[15px] place-self-center"
           >
             This page, were you are, was made by me
           </p>
-          <div class="card_dark rounded-[15px] relative group mt-[10px]">
+          <div class="row-span-5 card_dark rounded-[15px] relative group">
             <div
-              class="absolute inset-0 w-full cursor-default card_dark h-full rounded-[15px] px-4 py-9 opacity-100 group-hover:h-1/6 group-hover:translate-y-[400px] group-hover:py-6 transition-translate duration-500"
+              class="absolute inset-0 w-full cursor-default card_dark h-full rounded-[15px] px-4 py-9 opacity-100 group-hover:h-1/6 group-hover:translate-y-0 group-hover:py-6 transition-translate duration-500"
             >
-              <p class="text-start font-semibold text-3xl">
+              <p class="text-start font-bold xl:font-semibold text-5xl xl:text-3xl self-center">
                 software development
               </p>
               <p
-                class="text-start font-light text-lg group-hover:opacity-0 group-hover:delay-0 delay-[300ms] transition-all duration-900 mt-6"
+                class="text-start font-medium xl:font-light text-3xl xl:text-lg group-hover:opacity-0 group-hover:delay-0 delay-[300ms] transition-all duration-900 mt-6"
               >
                 I have a strong passion for programming and enjoy working with
                 languages such as Java, C, and Python, applying them to software
@@ -266,26 +265,24 @@
             />
           </div>
         </div>
-        <div class="relative group">
+        <div class="relative group grid grid-rows-6 gap-6">
           <p
-            class="text-center px-4 opacity-0 group-hover:opacity-100 transition duration-[700ms] text-2xl font-medium card_dark rounded-[15px]"
+            class="text-center px-4 opacity-0 group-hover:opacity-100 transition duration-[700ms] text-4xl xl:text-2xl font-semibold xl:font-medium card_dark rounded-[15px] place-self-center"
           >
             BMI for arms and legs motion intent detection
           </p>
-          <div class="card_dark rounded-[15px] relative group mt-[10px]">
-            <div
-              class="absolute inset-0 w-full cursor-default card_dark h-full rounded-[15px] px-4 py-9 opacity-100 group-hover:h-1/6 group-hover:translate-y-[400px] group-hover:py-6 transition-translate duration-500"
-            >
-              <p class="text-start font-semibold text-3xl">Other subjects</p>
+          <div id = "div_transition" class="row-span-5 card_dark rounded-[15px] relative group">
+            <div id = "card_transition" class="absolute inset-0 w-full cursor-default card_dark h-full rounded-[15px] px-4 py-9 opacity-100 group-hover:h-1/6 group-hover:translate-y-0 group-hover:py-6 transition-translate duration-500">
+              <p class="text-start font-bold xl:font-semibold text-5xl xl:text-3xl self-center">Other subjects</p>
               <p
-                class="text-start font-light text-lg group-hover:opacity-0 group-hover:delay-0 delay-[300ms] transition-all duration-900 mt-6"
+                class="text-start font-medium xl:font-light text-3xl xl:text-lg group-hover:opacity-0 group-hover:delay-0 delay-[300ms] transition-all duration-900 mt-6"
               >
                 I am deeply interested in neuroscience, drones, and the
                 development of IoT and home automation applications. I enjoy
                 working on the entire electronics aspect of projects,
                 integrating intelligent control systems, sensor networks, and
                 real-time data processing to enhance human-machine interaction
-                and optimize autonomous systems.
+                and optimize autonomous systems.               
               </p>
             </div>
             <img
@@ -388,7 +385,7 @@
       </div>
       <div class="grid grid-flow-col grid-cols-2 gap-6 items-center mb-[50px]">
         <div class="row-span-3">
-          <p class="font-semibold text-[70px] text-end">
+          <p class="font-semibold text-[30px] lg:text-[70px] text-end">
             ... And let's work together
           </p>
         </div>
@@ -414,7 +411,7 @@
           <div class="grid justify-items-center">
             <a
               class="md:px-8 md:py-2 group relative w-max flex flex-col items-center"
-              href=""
+              href="https://github.com/Perrony203"
             >
               <span class="flex flex-row items-center">
                 <p class="mr-1 font-semibold">Github</p>
@@ -433,7 +430,7 @@
           <div class="grid justify-items-center">
             <a
               class="md:px-8 md:py-2 group relative w-max flex flex-col items-center"
-              href=""
+              href="https://www.linkedin.com/in/sebastian-perrone-claro/"
             >
               <span class="flex flex-row items-center">
                 <p class="mr-1 font-semibold">Linkedin</p>
