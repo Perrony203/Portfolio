@@ -1,201 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src = "https://cdn.tailwindcss.com"></script>   
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/styles.css">    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body class = "dark_mode transition duration-700 ease-in">
-    <nav>
-        <div class = "container ml-auto flex items-center justify-between py-3">
-            <p class = "font-semibold">
-                Based on
-                <br>
-                Rionegro, Colombia
-            </p> 
-            <div class ="grid justify-items-center">
-                <p class ="font-light">Switch to</p>
-                <p id = "mode_text"class ="font-medium">light mode</p>
-                <button onclick ="changeMode()" id ="button_mode" class ="grid justify-items-start rounded-full w-full py-1 pl-2 mt-1 hover:animate-pulse transition duration-[1500ms]"><i class="fa-solid fa-moon" style="color: #000000;"></i></button>
-                <!-- <i class="fa-solid fa-sun"></i> -->
-            </div>
-            <div id="navbarNav" class = "w-full md:w-auto">
-                <ul class="flex justify-between">
-                    <li class ="grid justify-items-center">
-                        <a class = "md:px-8 md:py-2 group relative w-max flex flex-col items-center" href="#home">
-                            <span>Home</span>
-                            <div class="relative w-full">
-                                <span  class="absolute -bottom-1 left-0 transition-all duration-300 w-full h-0.5 bar_dark"></span>
-                                <span  class="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bar_change_dark group-hover:w-full"></span>
-                            </div>
-                        </a>                        
-                    </li>
-                    <li class ="grid justify-items-center">
-                        <a class = "md:px-8 md:py-2 group relative w-max flex flex-col items-center" href="#about">
-                            <span>About me</span>
-                            <div class="relative w-full">
-                                <span  class="absolute -bottom-1 left-0 transition-all duration-300 w-full h-0.5 bar_dark"></span>
-                                <span  class="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bar_change_dark group-hover:w-full"></span>
-                            </div>
-                        </a>                        
-                    </li>
-                    <li class ="grid justify-items-center">
-                        <a class = "md:px-8 md:py-2 group relative w-max flex flex-col items-center" href="#experience">
-                            <span>Experience</span>
-                            <div class="relative w-full">
-                                <span  class="absolute -bottom-1 left-0 transition-all duration-300 w-full h-0.5 bar_dark"></span>
-                                <span  class="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bar_change_dark group-hover:w-full"></span>
-                            </div>
-                        </a>                        
-                    </li>
-                    <li class ="grid justify-items-center">
-                        <a class = "md:px-8 md:py-2 group relative w-max flex flex-col items-center" href="#contact">
-                            <span>Contact me</span>
-                            <div class="relative w-full">
-                                <span  class="absolute -bottom-1 left-0 transition-all duration-300 w-full h-0.5 bar_dark"></span>
-                                <span  class="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bar_change_dark group-hover:w-full"></span>
-                            </div>
-                        </a>                        
-                    </li>
-                </ul>
-            </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="dark_mode transition duration-700 ease-in">
+    <nav class = "w-full">
+      <div class="container ml-auto flex items-center justify-between py-3">
+        <p class="font-semibold">
+          Based on
+          <br />
+          Rionegro, Colombia
+        </p>
+        <div class="grid justify-items-center">
+          <p class="font-light">Switch to</p>
+          <p id="mode_text" class="font-medium">light mode</p>
+          <button
+            onclick="changeMode()"
+            id="button_mode"
+            class="grid justify-items-start rounded-full w-full py-1 pl-2 mt-1 hover:animate-pulse transition duration-[1500ms]"
+          >
+            <i class="fa-solid fa-moon" style="color: #000000"></i>
+          </button>
+          <!-- <i class="fa-solid fa-sun"></i> -->
         </div>
+        <div id="navbarNav" class="w-full md:w-auto">
+          <ul class="flex justify-between">
+            <li class="grid justify-items-center">
+              <a
+                class="md:px-8 md:py-2 group relative w-max flex flex-col items-center"
+                href="#home"
+              >
+                <span>Home</span>
+                <div class="relative w-full">
+                  <span
+                    class="absolute -bottom-1 left-0 transition-all duration-300 w-full h-0.5 bar_dark"
+                  ></span>
+                  <span
+                    class="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bar_change_dark group-hover:w-full"
+                  ></span>
+                </div>
+              </a>
+            </li>
+            <li class="grid justify-items-center">
+              <a
+                class="md:px-8 md:py-2 group relative w-max flex flex-col items-center"
+                href="#about"
+              >
+                <span>About me</span>
+                <div class="relative w-full">
+                  <span
+                    class="absolute -bottom-1 left-0 transition-all duration-300 w-full h-0.5 bar_dark"
+                  ></span>
+                  <span
+                    class="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bar_change_dark group-hover:w-full"
+                  ></span>
+                </div>
+              </a>
+            </li>
+            <li class="grid justify-items-center">
+              <a
+                class="md:px-8 md:py-2 group relative w-max flex flex-col items-center"
+                href="#experience"
+              >
+                <span>Experience</span>
+                <div class="relative w-full">
+                  <span
+                    class="absolute -bottom-1 left-0 transition-all duration-300 w-full h-0.5 bar_dark"
+                  ></span>
+                  <span
+                    class="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bar_change_dark group-hover:w-full"
+                  ></span>
+                </div>
+              </a>
+            </li>
+            <li class="grid justify-items-center">
+              <a
+                class="md:px-8 md:py-2 group relative w-max flex flex-col items-center"
+                href="#contact"
+              >
+                <span>Contact me</span>
+                <div class="relative w-full">
+                  <span
+                    class="absolute -bottom-1 left-0 transition-all duration-300 w-full h-0.5 bar_dark"
+                  ></span>
+                  <span
+                    class="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bar_change_dark group-hover:w-full"
+                  ></span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
-    <header id="home">
-        <div class = "grid justify-items-start pt-[15px]"><h1 class = "text-[220px] font-semibold">Sebastian</h1></div>
-        <div class = "grid justify-items-end p-[15px]"><h1 class = "text-[220px] font-semibold">Perrone</h1></div>
-        <div class="w-2/5 flex items-start text-xl font-medium">
-            <p class="w-full text-[25px] pt-[30px]">A mechatronic and computation engineer with experience in web development and implementing robotic systems into industrial environments</p>
-        </div>        
+    <header id="home" class="w-full">
+      <div class="grid justify-items-start pt-[15px]">
+        <h1 class="text-[220px] font-semibold">Sebastian</h1>
+      </div>
+      <div class="grid justify-items-end p-[15px]">
+        <h1 class="text-[220px] font-semibold">Perrone</h1>
+      </div>
+      <div class="w-2/5 flex items-start text-xl font-medium">
+        <p class="w-full text-[25px] pt-[30px]">
+          A mechatronic and computation engineer with experience in web
+          development and implementing robotic systems into industrial
+          environments
+        </p>
+      </div>
     </header>
 
-    <section class = "" id = "about">
-        <div>
-            <h1 class = "subtitles">About me</h1>
-            <hr class = "bright_mode"> 
-        </div> 
-        <div class = "grid grid-flow-col grid-cols-2 gap-4 auto-rows-auto">
-            <div class="relative group -mt-[22px]">
-                <img class = "scale-[0.7] rounded-[20px] transition duration-500 group-hover:blur-sm group-hover:grayscale" src="../resources/images/Portfolio-photo.jpeg" alt="">
-                <div class="absolute inset-0 w-3/4 place-self-center flex flex-col items-center cursor-default opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <p class="text-center text-white font-semibold text-4xl w-3/4 mb-4">You are the only Bible some unbelievers will ever read</p>                    
-                    <p class="text-center text-white font-normal italic text-2xl">-John MacArthur</p>
-                </div>
-            </div>
-            <div class="flex flex-col mt-[80px]">
-                <div class = "font-bold text-[40px]">
-                    <p>Working creating software and hardware solutions that stand out for being neat, functional and aesthetic.</p>
-                </div>
-                <div class = "mt-[40px] text-[16px]">
-                    <p class = "font-normal">Engineer with knowledge in Java, Python, C, SQL and development tools in business areas such as LabView and Ladder. All this, in order to create engineering solutions that have software and/or hardware components.</p>
-                    <br>
-                    <p class = "font-normal">I have a double degree from the EIA University in mechatronic engineering and systems and computing engineering that has given me tools for generating ideas that lead to a problem-solving or automation project. I like working with robotic systems and front end development.</p>
-                    <br>
-                    <p class = "font-normal">I'm fluent in english and spanish, love music and flying racing drones.</p>
-                </div>                
-            </div>            
+    <section class="w-full" id="about">
+      <div>
+        <h1 class="subtitles">About me</h1>
+        <hr class="bright_mode" />
+      </div>
+      <div class="grid grid-flow-col grid-cols-2 gap-4 auto-rows-auto">
+        <div class="relative group -mt-[22px]">
+          <img
+            class="scale-[0.7] rounded-[20px] transition duration-500 group-hover:blur-sm group-hover:grayscale"
+            src="../resources/images/Portfolio-photo.jpeg"
+            alt=""
+          />
+          <div
+            class="absolute inset-0 w-3/4 place-self-center flex flex-col items-center cursor-default opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+            <p class="text-center text-white font-semibold text-4xl w-3/4 mb-4">
+              You are the only Bible some unbelievers will ever read
+            </p>
+            <p class="text-center text-white font-normal italic text-2xl">
+              -John MacArthur
+            </p>
+          </div>
         </div>
+        <div class="flex flex-col mt-[80px]">
+          <div class="font-bold text-[40px]">
+            <p>
+              Working creating software and hardware solutions that stand out
+              for being neat, functional and aesthetic.
+            </p>
+          </div>
+          <div class="mt-[40px] text-[16px]">
+            <p class="font-normal">
+              Engineer with knowledge in Java, Python, C, SQL and development
+              tools in business areas such as LabView and Ladder. All this, in
+              order to create engineering solutions that have software and/or
+              hardware components.
+            </p>
+            <br />
+            <p class="font-normal">
+              I have a double degree from the EIA University in mechatronic
+              engineering and systems and computing engineering that has given
+              me tools for generating ideas that lead to a problem-solving or
+              automation project. I like working with robotic systems and front
+              end development.
+            </p>
+            <br />
+            <p class="font-normal">
+              I'm fluent in english and spanish, love music and flying racing
+              drones.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class = "-mt-[90px] " id = "experience">
-        <div>
-            <h1 class = "subtitles font-semibold">Experience</h1>
-            <hr> 
-        </div> 
-        <div class="grid grid-cols-3 gap-6 mt-[100px]">
-            <div>
-                <div class = "card_dark rounded-[15px] relative group">
-                    <div class="absolute inset-0 w-full cursor-default card_dark h-full rounded-[15px] px-4 py-9 opacity-100 group-hover:h-1/6 group-hover:translate-y-[400px] group-hover:py-6 transition-translate duration-500">                        
-                        <p class="text-start font-semibold text-3xl">Industrial automatization</p>
-                        <p class="text-start font-light text-lg group-hover:opacity-0 group-hover:delay-0 delay-200 transition-all duration-900 mt-6">I develop and integrate industrial automation solutions. With expertise in both software and hardware, I design smart manufacturing systems that optimize processes and improve productivity. My work focuses on creating efficient, adaptive control systems that seamlessly integrate various technologies to improve overall performance.</p>
-                        <br>
-                        <p class="text-start font-light text-lg group-hover:opacity-0 group-hover:delay-0 delay-200 transition-all duration-900">I program PLCs in Ladder, configure sensor networks, and integrate robotics with real-time data analytics, using LabVIEW and SQL for automation.</p>
-                        </div> 
-                    <img class = "rounded-[15px]" src="../resources/images/Automatization.jpeg" alt="">                                    
-                </div>
+    <section class="-mt-[90px] w-full" id="experience">
+      <div>
+        <h1 class="subtitles font-semibold">Experience</h1>
+        <hr />
+      </div>
+      <div class="grid grid-cols-3 gap-6 mt-[30px]">
+        <div class="relative group">
+          <p
+            class="text-center px-4 opacity-0 group-hover:opacity-100 transition duration-[700ms] text-2xl font-medium card_dark rounded-[15px]"
+          >
+            Automatic baby socks packing machine for Crystal SAS
+          </p>
+          <div class="card_dark rounded-[15px] relative group mt-[10px]">
+            <div
+              class="absolute inset-0 w-full cursor-default card_dark h-full rounded-[15px] px-4 py-9 opacity-100 group-hover:h-1/6 group-hover:translate-y-[400px] group-hover:py-6 transition-translate duration-500"
+            >
+              <p class="text-start font-semibold text-3xl">
+                Industrial automatization
+              </p>
+              <p
+                class="text-start font-light text-lg group-hover:opacity-0 group-hover:delay-0 delay-[300ms] transition-all duration-900 mt-6"
+              >
+                I develop and integrate industrial automation solutions that
+                combines software and hardware, I design smart manufacturing
+                systems that optimize processes and improve productivity. My
+                work focuses on creating efficient, adaptive control systems
+                that seamlessly integrate various technologies to improve
+                overall performance.
+              </p>
+              <br />
+              <p
+                class="text-start font-light text-lg group-hover:opacity-0 group-hover:delay-0 delay-[300ms] transition-all duration-900"
+              >
+                I work with PLCs in Ladder, configuring sensor networks, and
+                integrating robotics with real-time data analytics, using
+                LabVIEW and SQL for automation.
+              </p>
             </div>
-            <div>
-                <div class = "card_dark rounded-[15px] relative group">
-                    <div class="absolute inset-0 w-full cursor-default card_dark h-full rounded-[15px] px-4 py-9 opacity-100 group-hover:h-1/6 group-hover:translate-y-[400px] group-hover:py-6 transition-translate duration-500">                        
-                        <p class="text-start font-semibold text-3xl">software development</p>
-                        <p class="text-start font-light text-lg group-hover:opacity-0 group-hover:delay-0 delay-200 transition-all duration-900 mt-6">I have a strong passion for programming and enjoy working with languages such as Java, C, and Python, applying them to software development, automation, and embedded systems. Additionally, I am interested in web development, leveraging HTML, CSS, and Tailwind to design modern and responsive user interfaces. My focus is on writing efficient, scalable code while adhering to best practices to optimize performance and user experience.</p>
-                        <br>
-                        <p class="text-start font-light text-lg group-hover:opacity-0 group-hover:delay-0 delay-200 transition-all duration-900">This page, where you are, was made by me.</p>                        
-                    </div> 
-                    <img class = "rounded-[15px]" src="../resources/images/code.jpg" alt="">                                    
-                </div>
-            </div>
-            <div>
-                <div class = "card_dark rounded-[15px] relative group">
-                    <div class="absolute inset-0 w-full cursor-default card_dark h-full rounded-[15px] px-4 py-9 opacity-100 group-hover:h-1/6 group-hover:translate-y-[400px] group-hover:py-6 transition-translate duration-500">                        
-                        <p class="text-start font-semibold text-3xl">Other subjects</p>
-                        <p class="text-start font-light text-lg group-hover:opacity-0 group-hover:delay-0 delay-200 transition-all duration-900 mt-6">I am deeply interested in neuroscience, drones, and the development of IoT and home automation applications. I enjoy working on the entire electronics aspect of projects, integrating intelligent control systems, sensor networks, and real-time data processing to enhance human-machine interaction and optimize autonomous systems.</p>
-                        <br>
-                        <p class="text-start font-light text-lg group-hover:opacity-0 group-hover:delay-0 delay-200 transition-all duration-900">I aim to work in fields related to my expertise but am highly adaptable and eager to learn new technologies to contribute effectively to diverse projects.</p>
-                    </div> 
-                    <img class = "rounded-[15px]" src="../resources/images/Weird-photo.jpeg" alt="">                                    
-                </div>
-            </div>
+            <img
+              class="rounded-[15px] object-cover w-full h-full"
+              src="../resources/images/Automatization.jpeg"
+              alt=""
+            />
+          </div>
         </div>
+        <div class="relative group">
+          <p
+            class="text-center px-4 opacity-0 group-hover:opacity-100 transition duration-[700ms] text-2xl font-medium card_dark rounded-[15px] h-fit"
+          >
+            This page, were you are, was made by me
+          </p>
+          <div class="card_dark rounded-[15px] relative group mt-[10px]">
+            <div
+              class="absolute inset-0 w-full cursor-default card_dark h-full rounded-[15px] px-4 py-9 opacity-100 group-hover:h-1/6 group-hover:translate-y-[400px] group-hover:py-6 transition-translate duration-500"
+            >
+              <p class="text-start font-semibold text-3xl">
+                software development
+              </p>
+              <p
+                class="text-start font-light text-lg group-hover:opacity-0 group-hover:delay-0 delay-[300ms] transition-all duration-900 mt-6"
+              >
+                I have a strong passion for programming and enjoy working with
+                languages such as Java, C, and Python, applying them to software
+                development, automation, and embedded systems. Additionally, I
+                am interested in web development, leveraging HTML, CSS, and
+                Tailwind to design modern and responsive user interfaces. My
+                focus is on writing efficient, scalable code while adhering to
+                best practices to optimize performance and user experience.
+              </p>
+            </div>
+            <img
+              class="rounded-[15px] object-cover w-full h-full"
+              src="../resources/images/code.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="relative group">
+          <p
+            class="text-center px-4 opacity-0 group-hover:opacity-100 transition duration-[700ms] text-2xl font-medium card_dark rounded-[15px]"
+          >
+            BMI for arms and legs motion intent detection
+          </p>
+          <div class="card_dark rounded-[15px] relative group mt-[10px]">
+            <div
+              class="absolute inset-0 w-full cursor-default card_dark h-full rounded-[15px] px-4 py-9 opacity-100 group-hover:h-1/6 group-hover:translate-y-[400px] group-hover:py-6 transition-translate duration-500"
+            >
+              <p class="text-start font-semibold text-3xl">Other subjects</p>
+              <p
+                class="text-start font-light text-lg group-hover:opacity-0 group-hover:delay-0 delay-[300ms] transition-all duration-900 mt-6"
+              >
+                I am deeply interested in neuroscience, drones, and the
+                development of IoT and home automation applications. I enjoy
+                working on the entire electronics aspect of projects,
+                integrating intelligent control systems, sensor networks, and
+                real-time data processing to enhance human-machine interaction
+                and optimize autonomous systems.
+              </p>
+            </div>
+            <img
+              class="rounded-[15px] object-cover w-full h-full"
+              src="../resources/images/Weird-photo.jpeg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="justify-items-center mt-[50px]">
+        <p class="text-center font-medium text-3xl w-3/4">
+          I aim to work in fields related to my expertise but am highly
+          adaptable and eager to learn new technologies to contribute
+          effectively to diverse projects.
+        </p>
+      </div>
     </section>
 
-    <footer class = " " id = "contact">
-        <div class = "mt-[180px]">
-            <hr class = "mb-[20px]"> 
-            <h1 class = "font-semibold text-[60px] mb-[50px]">Contact me ...</h1>            
-        </div> 
-        <div class = "grid grid-flow-col grid-cols-2 gap-6 items-center mb-[50px]">
-            <div class = "row-span-3">
-                <p class = "font-semibold text-[70px] text-end">... And let's work together</p>
+    <section id="hobbies" class = "w-full">
+      <div>
+        <h1 class="subtitles font-semibold">Hobbies</h1>
+        <hr />
+      </div>
+      <div class="mt-[100px]">
+        <div class="card_dark rounded-[15px] w-3/4 mb-[30px]">
+          <div class="grid grid-cols-2 gap-8">
+            <img
+              class="rounded-l-[15px] object-cover w-full h-full"
+              src="../resources/images/drone.jpg"
+              alt=""
+            />
+            <div class="justify-items-start py-9 pr-4">
+              <p class="font-semibold text-3xl text-start">Racing drones</p>
+              <p class="font-light text-lg text-start mt-6">
+                The world of racing drones is vast and requires a lot of
+                engineering skills in the fields of electronics, sensors and
+                mobile robotics. Once assembled, it is like an escape to another
+                dimension as I find myself on a flying object at high speed and
+                performing unimaginable manoeuvres. The skills, which are
+                constantly acquired, lead increasingly to achieving better, more
+                original and above all more delicate and fine movements.
+              </p>
             </div>
-            <div class = "row-span-2 items-end">
-                <div class ="grid justify-items-end">
-                    <a class="md:px-8 md:py-2 group relative w-max flex flex-col items-center" href="contact.html">
-                        <span class="text-[40px] font-medium">Email me</span>                        
-                        <div class="relative w-full">
-                          <span  class="absolute -bottom-1 left-0 transition-all duration-300 w-full h-1 bar_dark"></span>
-                          <span  class="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-1 bar_change_dark group-hover:w-full"></span>
-                        </div>
-                      </a>                           
-                </div>
-            </div>
-            <div class = "items-end mt-[50px] flex justify-end">
-                <div class ="grid justify-items-center">
-                    <a class = "md:px-8 md:py-2 group relative w-max flex flex-col items-center" href="">
-                        <span class = "flex flex-row items-center">
-                            <p class = "mr-1 font-semibold">Github</p>
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </span>
-                        <div class="relative w-full">
-                            <span  class="absolute -bottom-1 left-0 transition-all duration-300 w-full h-0.5 bar_dark"></span>
-                            <span  class="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bar_change_dark group-hover:w-full"></span>
-                        </div>
-                    </a>                        
-                </div>
-                <div class ="grid justify-items-center">
-                    <a class = "md:px-8 md:py-2 group relative w-max flex flex-col items-center" href="">
-                        <span class = "flex flex-row items-center">
-                            <p class = "mr-1 font-semibold">Linkedin</p>
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </span>
-                        <div class="relative w-full">
-                            <span  class="absolute -bottom-1 left-0 transition-all duration-300 w-full h-0.5 bar_dark"></span>
-                            <span  class="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bar_change_dark group-hover:w-full"></span>
-                        </div>
-                    </a>                        
-                </div>
-            </div>            
+          </div>
         </div>
+        <div
+          class="card_dark rounded-[15px] w-3/4 mb-[30px] place-self-end"
+        >
+          <div class="grid grid-cols-2 gap-8">
+            <img
+              class="rounded-l-[15px] object-cover w-full h-full"
+              src="../resources/images/music.webp"
+              alt=""
+            />
+            <div class="justify-items-start py-9 pr-4">
+              <p class="font-semibold text-3xl text-start">Music</p>
+              <p class="font-light text-lg text-start mt-6">
+                I love music and every aspect of it. I value a good composition,
+                whether it is classical or salsa, although in my day to day life
+                I prefer music that calms my mind and heart, filling my spirit.
+                Besides enjoying listening to it, I love creating it and
+                performing it with the saxophone or with my voice. Performing
+                music alone, in a band or in a choir, makes me better at
+                controlling my abilities and using them in conjunction with
+                those of others to create something beautiful and enjoyable for
+                others.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card_dark rounded-[15px] w-3/4 mb-[30px]">
+          <div class="grid grid-cols-2 gap-8">
+            <img
+              class="rounded-l-[15px] object-cover w-full h-full"
+              src="../resources/images/sport.jpg"
+              alt=""
+            />
+            <div class="justify-items-start py-9 pr-4">
+              <p class="font-semibold text-3xl text-start">Sports</p>
+              <p class="font-light text-lg text-start mt-6">
+                Every sphere of human beings is necessary and its correct
+                maintenance allows us to develop better as people. The physical
+                part is very important and should not be neglected. That is why,
+                every week I dedicate time to exercise, whether in the gym,
+                playing basketball or running, I set myself challenges such as
+                running a marathon, winning a basketball tournament or lifting
+                more weight each time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="w-full" id="contact">
+      <div class="mt-[120px]">
+        <hr class="mb-[20px]" />
+        <h1 class="font-semibold text-[60px] mb-[50px]">Contact me ...</h1>
+      </div>
+      <div class="grid grid-flow-col grid-cols-2 gap-6 items-center mb-[50px]">
+        <div class="row-span-3">
+          <p class="font-semibold text-[70px] text-end">
+            ... And let's work together
+          </p>
+        </div>
+        <div class="row-span-2 items-end">
+          <div class="grid justify-items-end">
+            <a
+              class="md:px-8 md:py-2 group relative w-max flex flex-col items-center"
+              href="contact.html"
+            >
+              <span class="text-[40px] font-medium">Email me</span>
+              <div class="relative w-full">
+                <span
+                  class="absolute -bottom-1 left-0 transition-all duration-300 w-full h-1 bar_dark"
+                ></span>
+                <span
+                  class="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-1 bar_change_dark group-hover:w-full"
+                ></span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="items-end mt-[50px] flex justify-end">
+          <div class="grid justify-items-center">
+            <a
+              class="md:px-8 md:py-2 group relative w-max flex flex-col items-center"
+              href=""
+            >
+              <span class="flex flex-row items-center">
+                <p class="mr-1 font-semibold">Github</p>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </span>
+              <div class="relative w-full">
+                <span
+                  class="absolute -bottom-1 left-0 transition-all duration-300 w-full h-0.5 bar_dark"
+                ></span>
+                <span
+                  class="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bar_change_dark group-hover:w-full"
+                ></span>
+              </div>
+            </a>
+          </div>
+          <div class="grid justify-items-center">
+            <a
+              class="md:px-8 md:py-2 group relative w-max flex flex-col items-center"
+              href=""
+            >
+              <span class="flex flex-row items-center">
+                <p class="mr-1 font-semibold">Linkedin</p>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </span>
+              <div class="relative w-full">
+                <span
+                  class="absolute -bottom-1 left-0 transition-all duration-300 w-full h-0.5 bar_dark"
+                ></span>
+                <span
+                  class="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bar_change_dark group-hover:w-full"
+                ></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
 
-    <script src = "../script/script.js"></script>
-    
-</body>
+    <script src="../script/script.js"></script>
+  </body>
 </html>
