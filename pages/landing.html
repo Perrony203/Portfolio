@@ -22,14 +22,14 @@
   </head>
 
   <body class="dark_mode transition duration-700 ease-in">
-    <nav class = "w-full">
-      <div class="container ml-auto flex items-center justify-between py-3">
-        <p class="font-semibold">
+    <nav class="w-full">
+      <div class="container ml-auto flex flex-col md:flex-row items-center justify-between py-3">
+        <p class="font-semibold text-center md:text-left">
           Based on
           <br />
           Rionegro, Colombia
         </p>
-        <div class="grid justify-items-center">
+        <div class="grid justify-items-center my-6 md:my-0">
           <p class="font-light">Switch to</p>
           <p id="mode_text" class="font-medium">light mode</p>
           <button
@@ -42,8 +42,8 @@
           <!-- <i class="fa-solid fa-sun"></i> -->
         </div>
         <div id="navbarNav" class="w-full md:w-auto">
-          <ul class="flex justify-between">
-            <li class="grid justify-items-center">
+          <ul class="flex flex-col md:flex-row justify-between">
+            <li class="grid justify-items-center my-3 md:my-0">
               <a
                 class="md:px-8 md:py-2 group relative w-max flex flex-col items-center"
                 href="#home"
@@ -59,7 +59,7 @@
                 </div>
               </a>
             </li>
-            <li class="grid justify-items-center">
+            <li class="grid justify-items-center my-3 md:my-0">
               <a
                 class="md:px-8 md:py-2 group relative w-max flex flex-col items-center"
                 href="#about"
@@ -75,7 +75,7 @@
                 </div>
               </a>
             </li>
-            <li class="grid justify-items-center">
+            <li class="grid justify-items-center my-3 md:my-0">
               <a
                 class="md:px-8 md:py-2 group relative w-max flex flex-col items-center"
                 href="#experience"
@@ -91,7 +91,7 @@
                 </div>
               </a>
             </li>
-            <li class="grid justify-items-center">
+            <li class="grid justify-items-center my-3 md:my-0">
               <a
                 class="md:px-8 md:py-2 group relative w-max flex flex-col items-center"
                 href="#contact"
@@ -110,55 +110,61 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav>   
 
     <header id="home" class="w-full">
-      <div class="grid justify-items-start pt-[15px]">
-        <h1 class="text-[220px] font-semibold">Sebastian</h1>
+      <div class="grid justify-items-center md:justify-items-start pt-[15px]">
+        <h1 class="text-[80px] sm:text-[100px] md:text-[140px] lg:text-[220px] font-medium md:font-semibold">
+          Sebastian
+        </h1>
       </div>
-      <div class="grid justify-items-end p-[15px]">
-        <h1 class="text-[220px] font-semibold">Perrone</h1>
+      <div class="grid justify-items-center md:justify-items-end p-[15px]">
+        <h1 class="text-[80px] sm:text-[100px] md:text-[140px] lg:text-[220px] font-medium md:font-semibold">
+          Perrone
+        </h1>
       </div>
-      <div class="w-2/5 flex items-start text-xl font-medium">
-        <p class="w-full text-[25px] pt-[30px]">
+      <div class="w-full md:w-1/2 flex items-center md:items-start text-center md:text-left">
+        <p class="w-full text-[14px] sm:text-[16px] md:text-[18px] lg:text-[25px] pt-[30px] font-medium">
           A mechatronic and computation engineer with experience in web
           development and implementing robotic systems into industrial
           environments
         </p>
       </div>
     </header>
+    
 
     <section class="w-full" id="about">
       <div>
-        <h1 class="subtitles">About me</h1>
+        <h1 class="subtitles text-[40px] md:text-[50px] lg:text-[60px]">About me</h1>
         <hr class="bright_mode" />
       </div>
-      <div class="grid grid-flow-col grid-cols-2 gap-4 auto-rows-auto">
-        <div class="relative group -mt-[22px]">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 auto-rows-auto mt-[0px] lg:mt-[30px]">        
+        <div class="relative group self-center mx-auto">
           <img
-            class="scale-[0.7] rounded-[20px] transition duration-500 group-hover:blur-sm group-hover:grayscale"
+            class="scale-[0.7] lg:scale-[0.85] xl:scale-[0.7] rounded-[20px] transition duration-500 group-hover:blur-sm group-hover:grayscale"
             src="../resources/images/Portfolio-photo.jpeg"
             alt=""
           />
           <div
             class="absolute inset-0 w-3/4 place-self-center flex flex-col items-center cursor-default opacity-0 group-hover:opacity-100 transition-opacity duration-500"
           >
-            <p class="text-center text-white font-semibold text-4xl w-3/4 mb-4">
+            <p class="text-center text-white font-semibold text-2xl sm:text-3xl md:text-4xl w-3/4 mb-4">
               You are the only Bible some unbelievers will ever read
             </p>
-            <p class="text-center text-white font-normal italic text-2xl">
+            <p class="text-center text-white font-normal italic text-xl sm:text-2xl md:text-2xl">
               -John MacArthur
             </p>
           </div>
-        </div>
-        <div class="flex flex-col mt-[80px]">
-          <div class="font-bold text-[40px]">
+        </div>      
+        
+        <div class="flex flex-col self-center text-center lg:text-left">
+          <div class="font-semibold lg:font-bold text-[28px] sm:text-[32px] lg:text-[35px] xl:text-[40px] -mt-[70px] lg:mt-[0px]">
             <p>
               Working creating software and hardware solutions that stand out
               for being neat, functional and aesthetic.
             </p>
           </div>
-          <div class="mt-[40px] text-[16px]">
+          <div class="mt-[20px] md:mt-[30px] text-[14px] sm:text-[16px] md:text-[16px]">
             <p class="font-normal">
               Engineer with knowledge in Java, Python, C, SQL and development
               tools in business areas such as LabView and Ladder. All this, in
@@ -180,12 +186,12 @@
             </p>
           </div>
         </div>
-      </div>
+      </div>      
     </section>
 
     <section class="-mt-[90px] w-full" id="experience">
       <div>
-        <h1 class="subtitles font-semibold">Experience</h1>
+        <h1 class="subtitles text-[40px] md:text-[50px] lg:text-[60px]">Experience</h1>
         <hr />
       </div>
       <div class="grid grid-cols-3 gap-6 mt-[30px]">
@@ -301,7 +307,7 @@
 
     <section id="hobbies" class = "w-full">
       <div>
-        <h1 class="subtitles font-semibold">Hobbies</h1>
+        <h1 class="subtitles text-[40px] md:text-[50px] lg:text-[60px]">Hobbies</h1>
         <hr />
       </div>
       <div class="mt-[100px]">
@@ -378,7 +384,7 @@
     <footer class="w-full" id="contact">
       <div class="mt-[120px]">
         <hr class="mb-[20px]" />
-        <h1 class="font-semibold text-[60px] mb-[50px]">Contact me ...</h1>
+        <h1 class="subtitles text-[40px] md:text-[50px] lg:text-[60px] mb-[50px]">Contact me ...</h1>
       </div>
       <div class="grid grid-flow-col grid-cols-2 gap-6 items-center mb-[50px]">
         <div class="row-span-3">
